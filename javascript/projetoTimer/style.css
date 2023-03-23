@@ -12,7 +12,10 @@ body{
     top: 50%;/* a partir do topo 50%  */
     left: 50%;/* a partir da esquerda 50%  */
     transform: translate(-50%, -50%);
-    
+    padding: 50px;
+    border-color: aquamarine;
+    border: width 900px;;
+
 
 }
 .timer{
