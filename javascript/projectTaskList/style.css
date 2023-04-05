@@ -1,0 +1,53 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(99, 5, 110);
+    color:rgb(129, 214, 247);
+}
+
+.container{
+    background-color: rgb(99, 5, 110);
+    position: absolute;/* define a posição da div como absoluta   */
+    top: 20%;/* a partir do topo 50%  */
+    left: 50%;/* a partir da esquerda 50%  */
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border: 5px solid rgb(129, 214, 247);
+    border-radius: 2%;
+    width: 400px;
+}
+
+h1{
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
+
+.inputTask{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    border: 8px solid white;
+    border-radius: 5%;
+}
+
+.inputButton{
+    border: 8px solid rgb(129, 214, 247);
+    border-radius: 5%;
+    font-weight: bolder;
+    color:rgb(99, 5, 110);
+    background-color: rgb(129, 214, 247) ;
+}
+
+.tasks{
+
+}
+
+.deleteButton{
+    
+}
