@@ -6,7 +6,7 @@ body{
     color:rgb(129, 214, 247);
 }
 
-.container{
+.inputContainer{
     background-color: rgb(99, 5, 110);
     position: absolute;/* define a posição da div como absoluta   */
     top: 20%;/* a partir do topo 50%  */
@@ -14,7 +14,15 @@ body{
     transform: translate(-50%, -50%);
     padding: 25px;
     border: 5px solid rgb(129, 214, 247);
-    border-radius: 2%;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.listContainer{
+    background-color: rgb(99, 5, 110);
+    position: absolute;/* define a posição da div como absoluta   */
+    top: 35%;/* a partir do topo 50%  *//* a partir da esquerda 50%  */
+    padding: 25px;
     width: 400px;
 }
 
@@ -24,24 +32,25 @@ h1{
     margin-bottom: 50px;
 }
 
-.inputTask{
+.inputTaskContainer{
     display: flex;
     justify-content: space-between;
 }
 
-input{
+.inputTask{
     height: 30px;
     width: 200px;
     border: 8px solid white;
-    border-radius: 5%;
+    border-radius: 3px;
 }
 
 .inputButton{
     border: 8px solid rgb(129, 214, 247);
-    border-radius: 5%;
+    border-radius: 3px;
     font-weight: bolder;
     color:rgb(99, 5, 110);
     background-color: rgb(129, 214, 247) ;
+    height: 70px;
 }
 
 .tasks{
