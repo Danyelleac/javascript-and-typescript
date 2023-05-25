@@ -30,6 +30,7 @@ const addTaskList = (task)=>{
     tasks.appendChild(addLine)
     cleanInput();
     createDeleteButton(addLine)
+    saveTask()
 }
 
 const createDeleteButton=(li)=>{
@@ -45,6 +46,31 @@ document.addEventListener('click', function(e){
     const element = e.target;
     if(element.classList.contains('delete')){
         element.parentElement.remove()
+        saveTask()
+    }
+})
+
+const saveTask = () =>{
+    const liTasks = tasks.querySelectorAll('li');
+    const listTasks = [];
+    for (let task of liTasks){
+        let nameTask = task.innerText;
+        nameTask = nameTask.replace('Deletar','').trim()
+        listTasks.push(nameTask)
+
+    }
+    const tasksJson = JSON.stringify(listTasks)
+    localStorage.setItem('tasks', tasksJson)
+
+}
+
+const addSaveTasks = () =>{
+    const tasks = localStorage.getItem('tasks');
+    const listTasks = JSON.parse(tasks);
+    for(let task of listTasks){
+        createTask(task)
     }
 
-})
+}
+
+addSaveTasks()
